@@ -1,10 +1,9 @@
-import React from 'react'
-import Home from './pages/Home'
+import RouteIndex from './routes/RouteIndex'
 
 export default function App() {
   return (
     <div>
-      <Home />
+      <RouteIndex />
     </div>
   )
 }

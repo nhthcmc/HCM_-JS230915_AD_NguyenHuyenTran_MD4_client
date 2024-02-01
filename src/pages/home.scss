@@ -7,14 +7,120 @@
     box-sizing: border-box;
 }
 
-.home {
+.setup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: white;
+    color: black;
+
+    form {
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            background: #EEA53A;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        input,
+        select {
+            border: none;
+            padding: 5px;
+            color: black;
+            background: #EDF1F6;
+            border-radius: 5px;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 5px 5px 10px #888888;
+        padding: 20px;
+    }
+}
+
+.question {
+    position: relative;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .container {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            top: 30px;
+            right: 30px;
+            position: absolute;
+            color: green;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .answer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: black;
+                padding: 10px;
+            }
+        }
+
+        .next {
+            background: #EEA53A;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+        }
+    }
+}
+
+.popup {
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #EDF1F6;
-    padding: 20px;
 
     button {
         background: #EEA53A;
@@ -24,65 +130,5 @@
         padding: 10px;
         border-radius: 5px;
         width: 200px;
-        // align-items: center;
-    }
-
-    input,
-    select {
-        border: none;
-        padding: 5px;
-        color: black;
-        background: #EDF1F6;
-        border-radius: 5px;
-    }
-
-    .setup {
-        box-shadow: 5px 5px 10px #888888;
-        border-radius: 5px;
-        width: 30%;
-        padding: 20px;
-        background: white;
-        color: black;
-
-        form {
-            label {
-                display: flex;
-                flex-direction: column;
-            }
-
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-        }
-    }
-
-    .popup {
-        box-shadow: 5px 5px 10px #888888;
-        border-radius: 5px;
-        width: 30%;
-        padding: 20px;
-        background: white;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .question {
-        box-shadow: 5px 5px 10px #888888;
-        border-radius: 5px;
-        width: 30%;
-        padding: 20px;
-        background: white;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
     }
 }
